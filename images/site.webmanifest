@@ -1,0 +1,19 @@
+{
+  "name": "Somba Ndako",
+  "short_name": "Somba Ndako",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#7cff5b",
+  "background_color": "#f7f8f3",
+  "display": "standalone"
+}

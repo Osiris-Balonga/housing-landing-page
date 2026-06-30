@@ -141,7 +141,7 @@ summary {
   display: inline-flex;
   width: fit-content;
   align-items: center;
-  gap: 0.72rem;
+  gap: 0.48rem;
 }
 
 .brand-mark {
@@ -174,10 +174,11 @@ summary {
 
 .nav-shell {
   display: flex;
-  width: clamp(31rem, 39vw, 38.2rem);
+  width: clamp(29rem, 38vw, 34rem);
   min-height: 3.2rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.18rem;
   border: 1px solid var(--ndako-glass-border);
   border-radius: 999px;
   background: var(--ndako-glass);
@@ -603,11 +604,14 @@ summary {
 }
 
 .focusable:focus-visible,
-.search-card input:focus-visible,
 .search-card button:focus-visible,
 .mobile-menu summary:focus-visible {
   outline: 3px solid rgba(124, 255, 91, 0.8);
   outline-offset: 3px;
+}
+
+.search-card input:focus-visible {
+  outline: 0;
 }
 
 .section-container {
@@ -1212,11 +1216,11 @@ summary {
 
 @media (min-width: 1121px) and (max-width: 1250px) {
   .nav-shell {
-    width: clamp(29rem, 42vw, 32rem);
+    width: clamp(27.5rem, 40vw, 31rem);
   }
 
   .nav-shell a {
-    padding-inline: 0.86rem;
+    padding-inline: 0.88rem;
   }
 
   .cta {
@@ -1272,7 +1276,7 @@ summary {
   }
 
   .brand {
-    gap: 0.6rem;
+    gap: 0.42rem;
   }
 
   .brand-mark {
@@ -2469,7 +2473,7 @@ summary {
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.82rem;
+  gap: 0.5rem;
   color: var(--ndako-ink);
   text-decoration: none;
 }
@@ -2653,7 +2657,6 @@ summary {
 }
 
 .closing-cta-button:focus-visible,
-.newsletter-input input:focus-visible,
 .newsletter-input button:focus-visible,
 .footer-logo:focus-visible,
 .footer-contact a:focus-visible,
@@ -2661,6 +2664,10 @@ summary {
 .footer-legal a:focus-visible {
   outline: 3px solid rgba(124, 255, 91, 0.8);
   outline-offset: 3px;
+}
+
+.newsletter-input input:focus-visible {
+  outline: 0;
 }
 
 @media (max-width: 980px) {
